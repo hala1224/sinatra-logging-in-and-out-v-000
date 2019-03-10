@@ -3,7 +3,8 @@ class Helpers
   
   def current_user 
     
-    User.find_by_id(session[:user_id])
+   @current_user= User.find_by_id(session[:user_id])
+   @current_user
     
   end
   
